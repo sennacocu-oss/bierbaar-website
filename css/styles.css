@@ -363,6 +363,7 @@ a.product-slide:hover {
 .badge-popular { background: var(--color-accent-tint); color: var(--color-accent-dark); }
 .badge-limited { background: #f6dede; color: #a13d3d; }
 .badge-placeholder { background: #eee7d6; color: var(--color-text-muted); }
+.badge-new { background: #fce3e7; color: #b23955; }
 
 .slide-nav {
   position: absolute;
