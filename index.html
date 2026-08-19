@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bierbaar | Circulair bier, gebrouwen van wat anderen weggooien</title>
+<meta name="description" content="Bierbaar brouwt duurzaam, circulair bier op volledig natuurlijke wijze, van fruitschillen en broodkorsten die anders worden weggegooid. Statiegeldflessen, geen chemie, pure smaak.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="wordmark">Bierbaar</a>
+    <nav class="main-nav" aria-label="Hoofdnavigatie">
+      <a href="#assortiment">Assortiment</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#meer">Over ons</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img
+      class="hero-image"
+      src="https://images.unsplash.com/photo-1758272133713-52c6bb9f74f0?w=1920&q=80&auto=format&fit=crop"
+      alt="Vrienden proosten samen met bier bij zonsondergang"
+      loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="hero-kicker">Circulair bier</p>
+      <h1 class="hero-title">Bierbaar</h1>
+      <p class="hero-subtitle">Gebrouwen van wat anderen weggooien. Puur natuurlijk, volledig circulair.</p>
+      <a href="#assortiment" class="btn btn-primary">Bekijk het assortiment</a>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="container intro-inner">
+      <p class="intro-text">
+        Bierbaar brouwt bier op een volledig natuurlijke manier, zonder chemische processen.
+        We gebruiken reststromen zoals fruitschillen en broodkorsten die anders worden weggegooid,
+        en halen lege flesjes weer bij je op om opnieuw te vullen. Zo wordt elk flesje onderdeel
+        van een kringloop in plaats van afval.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT SLIDESHOW -->
+  <section id="assortiment" class="products">
+    <div class="container">
+      <h2 class="section-title">Ons assortiment</h2>
+      <p class="section-subtitle">Vijf smaken, allemaal gebrouwen van geredde ingrediënten.</p>
+
+      <div class="slideshow" id="productSlideshow">
+        <div class="slideshow-track" id="slideshowTrack">
+
+          <article class="product-slide">
+            <img src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=800&q=80&auto=format&fit=crop" alt="Flesje Blonde bananenschil bier" loading="lazy">
+            <div class="product-slide-body">
+              <span class="badge badge-popular">Populairste</span>
+              <h3>Blonde bananenschil</h3>
+              <p class="product-tag">Blond, zacht en fruitig</p>
+              <p class="product-price">&euro;2,25 per flesje &middot; 20% korting bij een 6-pack</p>
+            </div>
+          </article>
+
+          <article class="product-slide">
+            <img src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=800&q=80&auto=format&fit=crop" alt="Flesje Citroenrasp sour bier" loading="lazy">
+            <div class="product-slide-body">
+              <span class="badge badge-limited">Op = op, nog 20 stuks</span>
+              <h3>Citroenrasp sour</h3>
+              <p class="product-tag">Fris zuur met citrusrasp</p>
+              <p class="product-price">&euro;1,70 per flesje</p>
+            </div>
+          </article>
+
+          <article class="product-slide">
+            <img src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=800&q=80&auto=format&fit=crop" alt="Flesje Bierbaar bier" loading="lazy">
+            <div class="product-slide-body">
+              <h3>Sweet raspberry</h3>
+              <p class="product-tag">Zoet en vol fruit</p>
+              <p class="product-price">&euro;2,25 per flesje</p>
+            </div>
+          </article>
+
+          <article class="product-slide">
+            <img src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=800&q=80&auto=format&fit=crop" alt="Flesje Bierbaar bier" loading="lazy">
+            <div class="product-slide-body">
+              <h3>Angry blueberry</h3>
+              <p class="product-tag">Bosbes met een kruidig randje</p>
+              <p class="product-price">&euro;2,25 per flesje</p>
+            </div>
+          </article>
+
+          <article class="product-slide">
+            <img src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=800&q=80&auto=format&fit=crop" alt="Flesje Bierbaar bier" loading="lazy">
+            <div class="product-slide-body">
+              <h3>Mango tango</h3>
+              <p class="product-tag">Tropisch en vol fruit</p>
+              <p class="product-price">&euro;2,25 per flesje</p>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="slide-nav slide-nav-prev" id="slidePrev" aria-label="Vorige biertjes">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="slide-nav slide-nav-next" id="slideNext" aria-label="Volgende biertjes">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT: BLONDE BANANENSCHIL -->
+  <section class="spotlight">
+    <div class="container spotlight-inner">
+      <img class="spotlight-image" src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=900&q=80&auto=format&fit=crop" alt="Blonde bananenschil bier close-up" loading="lazy">
+      <div class="spotlight-text">
+        <span class="badge badge-popular">Populairste</span>
+        <h2>Blonde bananenschil</h2>
+        <p>
+          Blonde bananenschil is ons populairste biertje. We brouwen het op ambachtelijke wijze:
+          gemoute gerst wordt geweekt en verwarmd zodat het zetmeel omzet in vergistbare suikers.
+          Tijdens het koken voegen we gedroogde bananenschillen toe, een reststroom die anders in
+          de afvalbak belandt, voor een zachte, licht kruidige ondertoon. Na de gisting rijpt het
+          bier rustig na tot een blond biertje met een volle, ronde smaak en een vleugje banaan
+          in de afdronk. Geen chemische toevoegingen, geen kunstmatige aroma's: puur wat de natuur
+          en een goede gisting opleveren.
+        </p>
+        <p class="spotlight-price">&euro;2,25 per flesje &middot; 20% korting bij een 6-pack</p>
+        <button class="btn btn-primary btn-cart" data-product="Blonde bananenschil">
+          <i data-lucide="shopping-cart"></i>
+          In winkelmand
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT: CITROENRASP SOUR -->
+  <section class="spotlight spotlight-alt">
+    <div class="container spotlight-inner spotlight-inner-reverse">
+      <img class="spotlight-image" src="https://images.unsplash.com/photo-1703564803585-48b51539e119?w=900&q=80&auto=format&fit=crop" alt="Citroenrasp sour bier close-up" loading="lazy">
+      <div class="spotlight-text">
+        <span class="badge badge-limited">Op = op, nog 20 stuks</span>
+        <h2>Citroenrasp sour</h2>
+        <p>
+          Onze Citroenrasp sour is een verfrissend zuur biertje, gebrouwen met citrusschillen die
+          we ophalen bij lokale huishoudens en horeca. Door een langzame, natuurlijke verzuring
+          ontstaat een levendige frisheid, afgemaakt met citroenrasp voor een scherpe, sappige toon.
+          Een zuiver natuurlijk proces, zonder chemische zuren of smaakstoffen. Dit is een beperkte
+          batch: op is op.
+        </p>
+        <p class="spotlight-price">&euro;1,70 per flesje</p>
+        <button class="btn btn-primary btn-cart" data-product="Citroenrasp sour">
+          <i data-lucide="shopping-cart"></i>
+          In winkelmand
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2 class="section-title">Wat klanten zeggen</h2>
+      <p class="section-subtitle placeholder-note">
+        Voorbeeldreviews, worden binnenkort vervangen door echte klantervaringen.
+      </p>
+
+      <div class="reviews-track">
+        <article class="review-card">
+          <span class="badge badge-placeholder">Voorbeeldreview</span>
+          <div class="review-stars" aria-label="5 van de 5 sterren">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="review-quote">"De Blonde bananenschil is echt anders dan wat ik gewend ben, vol van smaak en niet te zoet. En het idee dat het van weggegooide bananenschillen komt, vind ik geweldig."</p>
+          <p class="review-author">Voorbeeldklant A.</p>
+        </article>
+
+        <article class="review-card">
+          <span class="badge badge-placeholder">Voorbeeldreview</span>
+          <div class="review-stars" aria-label="5 van de 5 sterren">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="review-quote">"Besteld en de volgende dag al in huis. Nette verpakking, vriendelijk klantcontact toen ik een vraag had over de statiegeldflesjes."</p>
+          <p class="review-author">Voorbeeldklant B.</p>
+        </article>
+
+        <article class="review-card">
+          <span class="badge badge-placeholder">Voorbeeldreview</span>
+          <div class="review-stars" aria-label="4 van de 5 sterren">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="review-quote">"Voor deze prijs verwacht je geen speciaalbier van dit niveau. De Citroenrasp sour is mijn favoriet, fris en verrassend."</p>
+          <p class="review-author">Voorbeeldklant C.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCORDION -->
+  <section id="meer" class="accordion-section">
+    <div class="container">
+      <h2 class="section-title">Meer over Bierbaar</h2>
+
+      <div class="accordion" id="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Onze USP's</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <ul class="usp-list">
+                <li>Volledig circulair: een natuurlijk brouwproces zonder chemische toevoegingen, gemaakt van reststromen zoals fruitschillen en broodkorsten die anders worden weggegooid.</li>
+                <li>Statiegeld op elk flesje: je stuurt de lege flesjes retour en wij hergebruiken het glas voor het volgende brouwsel.</li>
+                <li>Verrassende, gedurfde smaken die je niet snel ergens anders proeft.</li>
+                <li>Scherpe prijzen, vaak lager dan bij de goedkoopste supermarkt, zonder in te leveren op smaak of kwaliteit.</li>
+                <li>Gemaakt met ongeveer 30% fruit, voor een verrassend fris en relatief gezond biertje.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Ons verhaal &amp; toekomstbeeld</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>
+                Bierbaar is ontstaan uit een vriendengroep met een passie voor bier en reizen.
+                Tijdens een reis door Tanzania liepen we langs een rivier die volledig vervuild was
+                met plastic, glas en bierflesjes. Dat kon toch niet zo. Daar is onze passie voor
+                duurzaamheid ontstaan. Hoe en wat wisten we toen nog niet, we wilden gewoon iets
+                goeds doen voor de wereld, en wel met plezier. Zo kwamen we bij onze andere passie
+                uit: bier.
+              </p>
+              <p>
+                Onze toekomstvisie is goedkoop bier voor iedereen, dat mensen inspireert om zelf te
+                ondernemen in de circulaire economie, met hun eigen passie als vertrekpunt. We willen
+                vriendengroepen samenbrengen en verwennen met smaak, precies zoals wij dat zelf deden
+                toen dit allemaal begon.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Veelgestelde vragen</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <dl class="faq-list">
+                <dt>Hoe snel wordt mijn bestelling geleverd?</dt>
+                <dd>Vandaag besteld is morgen in huis. We leveren door heel Nederland.</dd>
+
+                <dt>Kan ik mijn bestelling retourneren?</dt>
+                <dd>Ja, retourneren kan tot een week na ontvangst, mits de flesjes intact en ongeopend zijn.</dd>
+
+                <dt>Wat gebeurt er met de statiegeldflesjes?</dt>
+                <dd>Je stuurt de lege flesjes naar ons terug, wij reinigen ze en vullen ze opnieuw voor het volgende brouwsel.</dd>
+
+                <dt>Waarom zijn jullie prijzen lager dan bij ander speciaalbier?</dt>
+                <dd>We brouwen kleinschalig en gebruiken reststromen die we gratis ophalen, zoals fruitschillen en broodkorsten. Die besparing geven we door in de prijs.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="wordmark wordmark-footer">Bierbaar</p>
+      <p class="footer-note">Circulair bier, gebrouwen van wat anderen weggooien.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <!-- Placeholdergegevens: vervang door de echte bedrijfsgegevens voordat de site live gaat -->
+      <p><i data-lucide="map-pin"></i> Voorbeeldstraat 1, 1234 AB Voorbeeldstad</p>
+      <p><i data-lucide="mail"></i> info@bierbaar.nl</p>
+      <p><i data-lucide="phone"></i> +31 (0)6 00 00 00 00</p>
+      <p class="footer-fine">Bierbaar B.V. &middot; KVK 00000000 (voorbeeld)</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Service</h3>
+      <a href="#" class="footer-link">Privacybeleid</a>
+      <a href="#" class="footer-link">Track &amp; trace (binnenkort beschikbaar)</a>
+      <a href="#" class="footer-link">Verzend- en retourbeleid</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Bierbaar. Alle rechten voorbehouden.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
